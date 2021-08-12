@@ -70,7 +70,7 @@ namespace quizmaker
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(227, 144);
             this.richTextBox2.TabIndex = 5;
-            this.richTextBox2.Text = "1. What\'s 2+2? (B)\n5\n4\n12\n53\n2. What\'s 5x5? (A)\n25\n5\n4\n76";
+            this.richTextBox2.Text = "";
             this.richTextBox2.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
             // 
             // richTextBox3
