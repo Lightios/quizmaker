@@ -12,6 +12,8 @@ namespace quizmaker
 {
     public partial class Form1 : Form
     {
+        DataLoader nowy = new DataLoader();
+
         public Form1()
         {
             InitializeComponent();
@@ -24,7 +26,7 @@ namespace quizmaker
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            nowy.Fun(richTextBox2);
         }
     }
 }

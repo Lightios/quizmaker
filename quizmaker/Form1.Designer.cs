@@ -57,7 +57,7 @@ namespace quizmaker
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(433, 427);
+            this.button3.Location = new System.Drawing.Point(311, 427);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(124, 75);
             this.button3.TabIndex = 4;
