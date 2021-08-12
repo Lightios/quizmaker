@@ -12,6 +12,8 @@ namespace quizmaker
 {
     public partial class Form1 : Form
     {
+        TestClass2 class2 = new TestClass2();
+       
         public Form1()
         {
             InitializeComponent();
@@ -24,7 +26,11 @@ namespace quizmaker
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+       
         }
+
+        private void richTextBox2_TextChanged(object sender, EventArgs e)
+        {
+            richTextBox1.newline
     }
 }

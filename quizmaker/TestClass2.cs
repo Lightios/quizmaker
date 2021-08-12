@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace quizmaker
 {
-    class CheckCorrectness
+    class TestClass2
     {
-        public void CheckCorrectness_input(string input_data)
+        public void test()
         {
-            
+
         }
+
+        public string adam = "s";
     }
 }
