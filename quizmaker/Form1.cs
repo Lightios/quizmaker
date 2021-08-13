@@ -14,9 +14,8 @@ namespace quizmaker
     {       
 
         int i = 0;
-        DataLoader nowy = new DataLoader();
+        DataLoader dataLoader = new DataLoader();
         QuizManager quizManager = new QuizManager();
-
 
         public Form1()
         {
@@ -30,7 +29,7 @@ namespace quizmaker
 
         private void button2_Click(object sender, EventArgs e)
         {
-            nowy.Fun(richTextBox2);
+            dataLoader.Fun(richTextBox2);
         }
 
         private void richTextBox2_TextChanged(object sender, EventArgs e)
@@ -40,7 +39,7 @@ namespace quizmaker
 
         private void button4_Click(object sender, EventArgs e)
         {
-            quizManager.StartQuiz(i,questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
+            quizManager.StartQuiz(dataLoader, i,questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -49,9 +48,10 @@ namespace quizmaker
             {
                 MessageBox.Show("Zaznacz odpowiedź.");
                 return;
-            }            
-                i++;
-                quizManager.StartQuiz(i, questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
+            }       
+            
+            i++;
+            quizManager.StartQuiz(dataLoader, i, questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
             
         }
     } }

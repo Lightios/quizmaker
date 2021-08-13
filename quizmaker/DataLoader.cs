@@ -4,19 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 namespace quizmaker
 {
-    internal class DataLoader : QuizManager
+    internal class DataLoader
     {
         public List<Question> questions = new List<Question>();
 
-        public void Fun(System.Windows.Forms.RichTextBox textBox) 
+        public void Fun(RichTextBox textBox) 
         {
             string[] data = System.IO.File.ReadAllLines("Data.txt");
             textBox.Clear();
             int i = 0;
-
-           
 
             foreach (string line in data)
             {
@@ -57,10 +56,9 @@ namespace quizmaker
 
             foreach (var question in questions)
             {
-                
+                MessageBox.Show(question.content);
             }
-            Console.WriteLine(questions[1].content);
+
         }
-        
     }
 }

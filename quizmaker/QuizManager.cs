@@ -9,16 +9,15 @@ namespace quizmaker
 {
     class QuizManager
     {
-        DataLoader dataLoader = new DataLoader();
-        public void StartQuiz(int i, Label labelnmbr, Label questiontxt, RadioButton answera, RadioButton answerb, RadioButton answerc, RadioButton answerd)
+
+        public void StartQuiz(DataLoader dataLoader, int i, Label labelnmbr, Label questiontxt, RadioButton answera, RadioButton answerb, RadioButton answerc, RadioButton answerd)
         {
             labelnmbr.Text = (i + 1).ToString();
-            Console.WriteLine(dataLoader.questions[1].content);
-            //questiontxt.Text = dataLoader.questions[i].content;
-            //answera.Text = dataLoader.questions[i].answerA;
-            //answerb.Text = dataLoader.questions[i].answerB;
-            //answerc.Text = dataLoader.questions[i].answerC;
-            //answerd.Text = dataLoader.questions[i].answerD;
+            questiontxt.Text = dataLoader.questions[i].content;
+            answera.Text = dataLoader.questions[i].answerA;
+            answerb.Text = dataLoader.questions[i].answerB;
+            answerc.Text = dataLoader.questions[i].answerC;
+            answerd.Text = dataLoader.questions[i].answerD;
             answera.Checked = false;
             answerb.Checked = false;
             answerc.Checked = false;
