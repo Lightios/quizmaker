@@ -14,9 +14,14 @@ namespace quizmaker
             string[] data = System.IO.File.ReadAllLines("Data.txt");
             textBox.Clear();
             int i = 0;
+
+            List<Question> questions = new List<Question>();
+
             foreach (string line in data)
             {
                 i++;
+
+                // Validation 
                 if(i%7 == 0)
                 {
                     if (line != "")
@@ -33,6 +38,27 @@ namespace quizmaker
                 }
                 textBox.AppendText(line + "\n");
             }
+
+            // Creating questions objects
+            for (int x = 0; x < data.Length / 7; x++)
+            {
+                Question current = new Question
+                {
+                    content = data[x * 7],
+                    answerA = data[x * 7 + 1],
+                    answerB = data[x * 7 + 2],
+                    answerC = data[x * 7 + 3],
+                    answerD = data[x * 7 + 4],
+                    correctAnswer = data[x * 7 + 5]
+                };
+                questions.Add(current);
+            }
+
+            foreach (var question in questions)
+            {
+                MessageBox.Show(question.content);
+            }
+
         }
     }
 }

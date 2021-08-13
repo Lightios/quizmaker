@@ -57,6 +57,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Question.cs" />
     <Compile Include="TestClass.cs" />
     <Compile Include="TestClass2.cs" />
     <EmbeddedResource Include="Form1.resx">

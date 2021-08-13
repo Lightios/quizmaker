@@ -31,11 +31,7 @@ namespace quizmaker
 
         private void button2_Click(object sender, EventArgs e)
         {
-
-
-
             nowy.Fun(richTextBox2);
-
         }
 
         private void richTextBox2_TextChanged(object sender, EventArgs e)
