@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 namespace quizmaker
 {
-    internal class DataLoader
-    {       
+    internal class DataLoader : QuizManager
+    {
+        public List<Question> questions = new List<Question>();
 
         public void Fun(System.Windows.Forms.RichTextBox textBox) 
         {
@@ -15,7 +16,7 @@ namespace quizmaker
             textBox.Clear();
             int i = 0;
 
-            List<Question> questions = new List<Question>();
+           
 
             foreach (string line in data)
             {
@@ -56,9 +57,10 @@ namespace quizmaker
 
             foreach (var question in questions)
             {
-                MessageBox.Show(question.content);
+                
             }
-
+            Console.WriteLine(questions[1].content);
         }
+        
     }
 }

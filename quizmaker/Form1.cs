@@ -11,12 +11,11 @@ using System.Windows.Forms;
 namespace quizmaker
 {
     public partial class Form1 : Form
-    {
+    {       
 
-        TestClass2 class2 = new TestClass2();
-
-
+        int i = 0;
         DataLoader nowy = new DataLoader();
+        QuizManager quizManager = new QuizManager();
 
 
         public Form1()
@@ -37,5 +36,22 @@ namespace quizmaker
         private void richTextBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            quizManager.StartQuiz(i,questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (answera_radiobtn.Checked == false & answerb_radiobtn.Checked == false & answerc_radiobtn.Checked == false & answerd_radiobtn.Checked == false)
+            {
+                MessageBox.Show("Zaznacz odpowiedź.");
+                return;
+            }            
+                i++;
+                quizManager.StartQuiz(i, questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
+            
         }
     } }

@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace quizmaker
 {
-    class Class3
+    class DataCollector
     {
+        public int Results (int points)
+        {
+
+            return points;
+        }
     }
 }
