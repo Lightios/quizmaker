@@ -12,7 +12,12 @@ namespace quizmaker
 {
     public partial class Form1 : Form
     {
+
+        TestClass2 class2 = new TestClass2();
+
+
         DataLoader nowy = new DataLoader();
+
 
         public Form1()
         {
@@ -26,7 +31,15 @@ namespace quizmaker
 
         private void button2_Click(object sender, EventArgs e)
         {
+
+
+
             nowy.Fun(richTextBox2);
+
         }
-    }
-}
+
+        private void richTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    } }

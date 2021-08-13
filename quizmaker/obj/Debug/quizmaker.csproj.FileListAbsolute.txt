@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+C:\Users\TOMEK\Source\Repos\quizmaker\quizmaker\bin\Debug\quizmaker.exe.config
+C:\Users\TOMEK\Source\Repos\quizmaker\quizmaker\bin\Debug\quizmaker.exe
+C:\Users\TOMEK\Source\Repos\quizmaker\quizmaker\bin\Debug\quizmaker.pdb
+C:\Users\TOMEK\Source\Repos\quizmaker\quizmaker\obj\Debug\quizmaker.csproj.AssemblyReference.cache
+C:\Users\TOMEK\Source\Repos\quizmaker\quizmaker\obj\Debug\quizmaker.Form1.resources
+C:\Users\TOMEK\Source\Repos\quizmaker\quizmaker\obj\Debug\quizmaker.Properties.Resources.resources
+C:\Users\TOMEK\Source\Repos\quizmaker\quizmaker\obj\Debug\quizmaker.csproj.GenerateResource.cache
+C:\Users\TOMEK\Source\Repos\quizmaker\quizmaker\obj\Debug\quizmaker.csproj.CoreCompileInputs.cache
+C:\Users\TOMEK\Source\Repos\quizmaker\quizmaker\obj\Debug\quizmaker.exe
+C:\Users\TOMEK\Source\Repos\quizmaker\quizmaker\obj\Debug\quizmaker.pdb
+=======
 C:\Users\nukin\source\repos\quizmaker\quizmaker\obj\Debug\quizmaker.csproj.AssemblyReference.cache
 C:\Users\nukin\source\repos\quizmaker\quizmaker\obj\Debug\quizmaker.Form1.resources
 C:\Users\nukin\source\repos\quizmaker\quizmaker\obj\Debug\quizmaker.Properties.Resources.resources
@@ -8,3 +20,4 @@ C:\Users\nukin\source\repos\quizmaker\quizmaker\bin\Debug\quizmaker.exe
 C:\Users\nukin\source\repos\quizmaker\quizmaker\bin\Debug\quizmaker.pdb
 C:\Users\nukin\source\repos\quizmaker\quizmaker\obj\Debug\quizmaker.exe
 C:\Users\nukin\source\repos\quizmaker\quizmaker\obj\Debug\quizmaker.pdb
+>>>>>>> b76216474e6d15470760d5974435c1fe1ae6f6a8

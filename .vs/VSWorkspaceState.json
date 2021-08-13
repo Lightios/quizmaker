@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\quizmaker"
   ],
+  "SelectedNode": "\\quizmaker\\CheckCorrectness.cs",
   "PreviewInSolutionExplorer": false
 }
