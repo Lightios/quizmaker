@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MaterialSkin.Controls;
 
 namespace quizmaker
 {
-    public partial class Form1 : Form
+    public partial class Form1 : MaterialForm
     {
         public static bool isopen = false;
         int i = 0;
@@ -32,29 +33,32 @@ namespace quizmaker
         {
            
         }
-
-        private void richTextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void StartButton_Click(object sender, EventArgs e)
         {
-            // TODO: dasda
-            dataLoader.LoadData(richTextBox2);
-            quizManager.StartQuiz(dataLoader, i, totalquestionsnmbr_label,questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
-            NextButton.Enabled = true;
-            i++;
-            //if(isopen == false)
-            //{
-            //    QuizForm quizForm = new QuizForm();
-            //    quizForm.Show();
-            //    isopen = true;
-            //
-            //}
+            
         }
 
         private void NextButton_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialFlatButton1_Click(object sender, EventArgs e)
+        {
+            dataLoader.LoadData(richTextBox2);
+            quizManager.StartQuiz(dataLoader, i, totalquestionsnmbr_label, questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
+            NextButton.Enabled = true;
+            i++;
+        }
+
+        private void materialFlatButton2_Click(object sender, EventArgs e)
         {
             if (answera_radiobtn.Checked == false & answerb_radiobtn.Checked == false & answerc_radiobtn.Checked == false & answerd_radiobtn.Checked == false)
             {
@@ -71,10 +75,5 @@ namespace quizmaker
             {
                 Console.WriteLine("Koniec pytań.");
             }
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     } }

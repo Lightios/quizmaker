@@ -31,3 +31,5 @@ C:\Users\JUSYR\source\repos\quizmaker\quizmaker\obj\Debug\quizmaker.csproj.Gener
 C:\Users\JUSYR\source\repos\quizmaker\quizmaker\obj\Debug\quizmaker.csproj.CoreCompileInputs.cache
 C:\Users\JUSYR\source\repos\quizmaker\quizmaker\obj\Debug\quizmaker.exe
 C:\Users\JUSYR\source\repos\quizmaker\quizmaker\obj\Debug\quizmaker.pdb
+C:\Users\TOMEK\source\repos\quizmaker\quizmaker\bin\Debug\MaterialSkin.dll
+C:\Users\TOMEK\source\repos\quizmaker\quizmaker\obj\Debug\quizmaker.csproj.CopyComplete
