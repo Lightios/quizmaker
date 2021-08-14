@@ -43,12 +43,13 @@ namespace quizmaker
             dataLoader.Fun(richTextBox2);
             quizManager.StartQuiz(dataLoader, i, totalquestionsnmbr_label,questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
             button1.Enabled = true;
-            if(isopen == false)
-            {
-                QuizForm quizForm = new QuizForm();
-                quizForm.Show();
-                isopen = true;
-            }
+            i++;
+            //if(isopen == false)
+            //{
+            //    QuizForm quizForm = new QuizForm();
+            //    quizForm.Show();
+            //    isopen = true;
+            //}
 
             
             
@@ -62,7 +63,7 @@ namespace quizmaker
                 MessageBox.Show("Zaznacz odpowiedź.");
                 return;
             }
-            if(i <= dataLoader.questions.Count)
+            if(i < dataLoader.questions.Count)
             {
                 quizManager.StartQuiz(dataLoader, i, totalquestionsnmbr_label, questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
                 i++;

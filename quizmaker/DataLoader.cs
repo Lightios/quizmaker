@@ -42,7 +42,7 @@ namespace quizmaker
             }
             questions.Clear();
             // Creating questions objects % saving answer
-            for (int x = 0; x < data.Length / 7; x++)
+            for (int x = 0; x <= data.Length / 7; x++)
             {
                 if(data[x * 7 + 5].ToLower() == "a")
                     data[x * 7 + 5] = data[x * 7 + 1];
