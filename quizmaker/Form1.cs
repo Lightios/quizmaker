@@ -38,45 +38,39 @@ namespace quizmaker
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void StartButton_Click(object sender, EventArgs e)
         {
             // TODO: dasda
-            dataLoader.Fun(richTextBox2);
+            dataLoader.LoadData(richTextBox2);
             quizManager.StartQuiz(dataLoader, i, totalquestionsnmbr_label,questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
-            button1.Enabled = true;
+            NextButton.Enabled = true;
             i++;
             //if(isopen == false)
             //{
             //    QuizForm quizForm = new QuizForm();
             //    quizForm.Show();
             //    isopen = true;
+            //
             //}
-
-            
-            
-
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void NextButton_Click(object sender, EventArgs e)
         {
             if (answera_radiobtn.Checked == false & answerb_radiobtn.Checked == false & answerc_radiobtn.Checked == false & answerd_radiobtn.Checked == false)
             {
                 MessageBox.Show("Zaznacz odpowiedź.");
                 return;
             }
-            if(i < dataLoader.questions.Count)
+
+            if (i < dataLoader.questions.Count)
             {
-                quizManager.StartQuiz(dataLoader, i, totalquestionsnmbr_label, questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
+                quizManager.CheckAnswer(dataLoader, i, questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
                 i++;
             }
             else
             {
                 Console.WriteLine("Koniec pytań.");
             }
-            
-            
-            
-            
         }
 
         private void label1_Click(object sender, EventArgs e)
