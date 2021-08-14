@@ -40,6 +40,7 @@ namespace quizmaker
 
         private void button4_Click(object sender, EventArgs e)
         {
+            // TODO: dasda
             dataLoader.Fun(richTextBox2);
             quizManager.StartQuiz(dataLoader, i, totalquestionsnmbr_label,questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
             button1.Enabled = true;
