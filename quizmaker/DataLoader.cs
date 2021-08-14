@@ -9,10 +9,9 @@ namespace quizmaker
 {
     internal class DataLoader
     {
-        public List<Question> questions = new List<Question>(); 
-        private static Random rng = new Random();
+        public List<Question> questions = new List<Question>();
 
-        public void LoadData(RichTextBox textBox) 
+        public void Fun(RichTextBox textBox) 
         {
            
             string[] data = System.IO.File.ReadAllLines("Data.txt");
@@ -22,8 +21,9 @@ namespace quizmaker
 
             foreach (string line in data)
             {
-                // Validation 
                 i++;
+
+                // Validation 
                 if (i % 7 == 0)
                 {
                     if (line != "")
@@ -40,7 +40,6 @@ namespace quizmaker
                 }
                 textBox.AppendText(line + "\n");
             }
-
             questions.Clear();
             // Creating questions objects % saving answer
             for (int x = 0; x <= data.Length / 7; x++)
@@ -69,7 +68,11 @@ namespace quizmaker
                 questions.Add(current);
             }
 
-            questions = questions.OrderBy(a => rng.Next()).ToList();
+            //foreach (var question in questions)
+            //{
+              
+            //}
+
         }
     }
 }

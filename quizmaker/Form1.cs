@@ -45,6 +45,7 @@ namespace quizmaker
            
         }
 
+<<<<<<< HEAD
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -59,21 +60,46 @@ namespace quizmaker
         }
 
         private void materialFlatButton2_Click(object sender, EventArgs e)
+=======
+        private void button4_Click(object sender, EventArgs e)
+        {
+            // TODO: dasda
+            dataLoader.Fun(richTextBox2);
+            quizManager.StartQuiz(dataLoader, i, totalquestionsnmbr_label,questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
+            button1.Enabled = true;
+            i++;
+            //if(isopen == false)
+            //{
+            //    QuizForm quizForm = new QuizForm();
+            //    quizForm.Show();
+            //    isopen = true;
+            //}
+
+            
+            
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+>>>>>>> parent of 5a40627 (Mixed questions)
         {
             if (answera_radiobtn.Checked == false & answerb_radiobtn.Checked == false & answerc_radiobtn.Checked == false & answerd_radiobtn.Checked == false)
             {
                 MessageBox.Show("Zaznacz odpowiedź.");
                 return;
             }
-
-            if (i < dataLoader.questions.Count)
+            if(i < dataLoader.questions.Count)
             {
-                quizManager.CheckAnswer(dataLoader, i, questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
+                quizManager.StartQuiz(dataLoader, i, totalquestionsnmbr_label, questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
                 i++;
             }
             else
             {
                 Console.WriteLine("Koniec pytań.");
             }
+            
+            
+            
+            
         }
     } }

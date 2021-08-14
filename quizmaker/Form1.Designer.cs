@@ -30,6 +30,24 @@ namespace quizmaker
         private void InitializeComponent()
         {
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+<<<<<<< HEAD
+=======
+            this.label2 = new System.Windows.Forms.Label();
+            this.questionnmbr_label = new System.Windows.Forms.Label();
+            this.answera_radiobtn = new System.Windows.Forms.RadioButton();
+            this.answerb_radiobtn = new System.Windows.Forms.RadioButton();
+            this.answerc_radiobtn = new System.Windows.Forms.RadioButton();
+            this.answerd_radiobtn = new System.Windows.Forms.RadioButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.questiontxt_label = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.totalquestionsnmbr_label = new System.Windows.Forms.Label();
+>>>>>>> parent of 5a40627 (Mixed questions)
             this.label7 = new System.Windows.Forms.Label();
             this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
             this.NextButton = new MaterialSkin.Controls.MaterialFlatButton();
@@ -164,6 +182,7 @@ namespace quizmaker
             this.answerd_radiobtn.Text = "materialRadioButton4";
             this.answerd_radiobtn.UseVisualStyleBackColor = true;
             // 
+<<<<<<< HEAD
             // materialLabel1
             // 
             this.materialLabel1.AutoSize = true;
@@ -178,6 +197,66 @@ namespace quizmaker
             this.materialLabel1.Text = "Pytanie nr: ";
             // 
             // questionnmbr_label
+=======
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(14, 59);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(14, 13);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "A";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(14, 82);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(14, 13);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "B";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(14, 126);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(15, 13);
+            this.label5.TabIndex = 21;
+            this.label5.Text = "D";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(14, 103);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(14, 13);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "C";
+            // 
+            // button1
+            // 
+            this.button1.Enabled = false;
+            this.button1.Location = new System.Drawing.Point(81, 163);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(113, 48);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "Dalej";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(256, 82);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(124, 75);
+            this.button4.TabIndex = 23;
+            this.button4.Text = "Start";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // questiontxt_label
+>>>>>>> parent of 5a40627 (Mixed questions)
             // 
             this.questionnmbr_label.AutoSize = true;
             this.questionnmbr_label.Depth = 0;
@@ -235,10 +314,20 @@ namespace quizmaker
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(750, 266);
             this.Controls.Add(this.questiontxt_label);
+<<<<<<< HEAD
             this.Controls.Add(this.totalquestionsnmbr_label);
             this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.questionnmbr_label);
             this.Controls.Add(this.materialLabel1);
+=======
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.answerc_radiobtn);
+>>>>>>> parent of 5a40627 (Mixed questions)
             this.Controls.Add(this.answerd_radiobtn);
             this.Controls.Add(this.answerc_radiobtn);
             this.Controls.Add(this.answerb_radiobtn);
@@ -257,6 +346,24 @@ namespace quizmaker
 
         #endregion
         private System.Windows.Forms.RichTextBox richTextBox2;
+<<<<<<< HEAD
+=======
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label questionnmbr_label;
+        private System.Windows.Forms.RadioButton answera_radiobtn;
+        private System.Windows.Forms.RadioButton answerb_radiobtn;
+        private System.Windows.Forms.RadioButton answerc_radiobtn;
+        private System.Windows.Forms.RadioButton answerd_radiobtn;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label questiontxt_label;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label totalquestionsnmbr_label;
+>>>>>>> parent of 5a40627 (Mixed questions)
         private System.Windows.Forms.Label label7;
         private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
         private MaterialSkin.Controls.MaterialFlatButton NextButton;
