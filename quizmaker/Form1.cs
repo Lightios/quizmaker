@@ -7,11 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MaterialSkin.Controls;
 
 namespace quizmaker
 {
-    public partial class Form1 : MaterialForm
+    public partial class Form1 : Form
     {
         public static bool isopen = false;
         int i = 0;
@@ -33,34 +32,12 @@ namespace quizmaker
         {
            
         }
-        
 
-        private void StartButton_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void NextButton_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-<<<<<<< HEAD
-        private void label1_Click(object sender, EventArgs e)
+        private void richTextBox2_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void materialFlatButton1_Click(object sender, EventArgs e)
-        {
-            dataLoader.LoadData(richTextBox2);
-            quizManager.StartQuiz(dataLoader, i, totalquestionsnmbr_label, questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
-            NextButton.Enabled = true;
-            i++;
-        }
-
-        private void materialFlatButton2_Click(object sender, EventArgs e)
-=======
         private void button4_Click(object sender, EventArgs e)
         {
             // TODO: dasda
@@ -81,7 +58,6 @@ namespace quizmaker
         }
 
         private void button1_Click(object sender, EventArgs e)
->>>>>>> parent of 5a40627 (Mixed questions)
         {
             if (answera_radiobtn.Checked == false & answerb_radiobtn.Checked == false & answerc_radiobtn.Checked == false & answerd_radiobtn.Checked == false)
             {
@@ -101,5 +77,10 @@ namespace quizmaker
             
             
             
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     } }
