@@ -22,14 +22,14 @@ namespace quizmaker
                 i++;
 
                 // Validation 
-                if(i%7 == 0)
+                if (i % 7 == 0)
                 {
                     if (line != "")
                     {
                         MessageBox.Show("There is no empty line for question separator.");
                     }
                 }
-                if((i-6)%7 == 0)
+                if ((i - 6) % 7 == 0)
                 {
                     if(line != "A" & line != "B" & line != "C" & line != "D" & line != "a" & line != "b" & line != "c" & line != "d" )
                     {
@@ -42,23 +42,18 @@ namespace quizmaker
             // Creating questions objects % saving answer
             for (int x = 0; x < data.Length / 7; x++)
             {
-                
-                if(data[x * 7 + 5] == "A" | data[x * 7 + 5] == "a")
-                {
+                if(data[x * 7 + 5].ToLower() == "a")
                     data[x * 7 + 5] = data[x * 7 + 1];
-                }
-                if (data[x * 7 + 5] == "B" | data[x * 7 + 5] == "b")
-                {
+                
+                if (data[x * 7 + 5].ToLower() == "b")
                     data[x * 7 + 5] = data[x * 7 + 2];
-                }
-                if (data[x * 7 + 5] == "C" | data[x * 7 + 5] == "c")
-                {
+                
+                if (data[x * 7 + 5].ToLower() == "c")
                     data[x * 7 + 5] = data[x * 7 + 3];
-                }
-                if (data[x * 7 + 5] == "D" | data[x * 7 + 5] == "d")
-                {
+                
+                if (data[x * 7 + 5].ToLower() == "d")
                     data[x * 7 + 5] = data[x * 7 + 4];
-                }
+                
                 Question current = new Question
                 {
                     content = data[x * 7],
