@@ -33,3 +33,5 @@ C:\Users\JUSYR\source\repos\quizmaker\quizmaker\obj\Debug\quizmaker.exe
 C:\Users\JUSYR\source\repos\quizmaker\quizmaker\obj\Debug\quizmaker.pdb
 C:\Users\TOMEK\source\repos\quizmaker\quizmaker\bin\Debug\MaterialSkin.dll
 C:\Users\TOMEK\source\repos\quizmaker\quizmaker\obj\Debug\quizmaker.csproj.CopyComplete
+C:\Users\nukin\source\repos\quizmaker\quizmaker\bin\Debug\MaterialSkin.dll
+C:\Users\nukin\source\repos\quizmaker\quizmaker\obj\Debug\quizmaker.csproj.CopyComplete
