@@ -13,7 +13,9 @@ namespace quizmaker
 
         public void Fun(RichTextBox textBox) 
         {
+           
             string[] data = System.IO.File.ReadAllLines("Data.txt");
+           
             textBox.Clear();
             int i = 0;
 
@@ -38,7 +40,7 @@ namespace quizmaker
                 }
                 textBox.AppendText(line + "\n");
             }
-
+            questions.Clear();
             // Creating questions objects % saving answer
             for (int x = 0; x < data.Length / 7; x++)
             {

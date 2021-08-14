@@ -11,11 +11,12 @@ using System.Windows.Forms;
 namespace quizmaker
 {
     public partial class Form1 : Form
-    {       
-
+    {
+        public static bool isopen = false;
         int i = 0;
         DataLoader dataLoader = new DataLoader();
         QuizManager quizManager = new QuizManager();
+        
 
         public Form1()
         {
@@ -40,8 +41,18 @@ namespace quizmaker
         private void button4_Click(object sender, EventArgs e)
         {
             dataLoader.Fun(richTextBox2);
-            quizManager.StartQuiz(dataLoader, i,questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
+            quizManager.StartQuiz(dataLoader, i, totalquestionsnmbr_label,questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
+            button1.Enabled = true;
+            if(isopen == false)
+            {
+                QuizForm quizForm = new QuizForm();
+                quizForm.Show();
+                isopen = true;
+            }
+
             
+            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -51,10 +62,23 @@ namespace quizmaker
                 MessageBox.Show("Zaznacz odpowiedź.");
                 return;
             }
+            if(i <= dataLoader.questions.Count)
+            {
+                quizManager.StartQuiz(dataLoader, i, totalquestionsnmbr_label, questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
+                i++;
+            }
+            else
+            {
+                Console.WriteLine("Koniec pytań.");
+            }
+            
+            
+            
+            
+        }
 
-            i++;
-            quizManager.StartQuiz(dataLoader, i, questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
-            
-            
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     } }
