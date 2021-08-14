@@ -29,7 +29,7 @@ namespace quizmaker
 
         private void button2_Click(object sender, EventArgs e)
         {
-            dataLoader.Fun(richTextBox2);
+           
         }
 
         private void richTextBox2_TextChanged(object sender, EventArgs e)
@@ -39,7 +39,9 @@ namespace quizmaker
 
         private void button4_Click(object sender, EventArgs e)
         {
+            dataLoader.Fun(richTextBox2);
             quizManager.StartQuiz(dataLoader, i,questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -48,10 +50,11 @@ namespace quizmaker
             {
                 MessageBox.Show("Zaznacz odpowiedź.");
                 return;
-            }       
-            
+            }
+
             i++;
             quizManager.StartQuiz(dataLoader, i, questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
+            
             
         }
     } }

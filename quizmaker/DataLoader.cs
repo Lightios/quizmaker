@@ -39,9 +39,26 @@ namespace quizmaker
                 textBox.AppendText(line + "\n");
             }
 
-            // Creating questions objects
+            // Creating questions objects % saving answer
             for (int x = 0; x < data.Length / 7; x++)
             {
+                
+                if(data[x * 7 + 5] == "A" | data[x * 7 + 5] == "a")
+                {
+                    data[x * 7 + 5] = data[x * 7 + 1];
+                }
+                if (data[x * 7 + 5] == "B" | data[x * 7 + 5] == "b")
+                {
+                    data[x * 7 + 5] = data[x * 7 + 2];
+                }
+                if (data[x * 7 + 5] == "C" | data[x * 7 + 5] == "c")
+                {
+                    data[x * 7 + 5] = data[x * 7 + 3];
+                }
+                if (data[x * 7 + 5] == "D" | data[x * 7 + 5] == "d")
+                {
+                    data[x * 7 + 5] = data[x * 7 + 4];
+                }
                 Question current = new Question
                 {
                     content = data[x * 7],
@@ -50,14 +67,14 @@ namespace quizmaker
                     answerC = data[x * 7 + 3],
                     answerD = data[x * 7 + 4],
                     correctAnswer = data[x * 7 + 5]
-                };
+                };                
                 questions.Add(current);
             }
 
-            foreach (var question in questions)
-            {
-                MessageBox.Show(question.content);
-            }
+            //foreach (var question in questions)
+            //{
+              
+            //}
 
         }
     }
