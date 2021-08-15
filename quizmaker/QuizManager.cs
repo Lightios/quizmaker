@@ -10,12 +10,10 @@ namespace quizmaker
     class QuizManager
     {
         string[] answers = {"", "", "", ""};
-
         List<int> indexes = new List<int>();
-
         Random rnd = new Random();
 
-       public int correct_answers = 0, wrong_answers = 0; 
+        public int correct_answers = 0, wrong_answers = 0; 
         public List<Question> wrongAnsweredQuestions = new List<Question>();
         string answer;
 

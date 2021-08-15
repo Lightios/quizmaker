@@ -78,6 +78,7 @@ namespace quizmaker
                     if (result == DialogResult.Yes)
                     {
                         i = 0;
+                        dataLoader.questions = new List<Question>(quizManager.wrongAnsweredQuestions);
                         quizManager.StartQuiz(dataLoader, i, totalquestionsnmbr_label, questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
                         i++;
                     }
