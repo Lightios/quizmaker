@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace quizmaker
 {
     public partial class Form1 : Form
@@ -71,6 +72,24 @@ namespace quizmaker
             {
                 quizManager.CheckAnswer(dataLoader, i, questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
                 Console.WriteLine("Koniec pytań.");
+                if (quizManager.wrong_answers > 0)
+                {
+                    var result = MessageBox.Show("Czy chcesz powtórzyć źle odpowiedziane pytania?", "Pytanie", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    {
+                        i = 0;
+                        quizManager.StartQuiz(dataLoader, i, totalquestionsnmbr_label, questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
+                        i++;
+                    }
+                    else
+                    {
+                        i = 0;
+                        dataLoader.LoadData(richTextBox2);
+                        quizManager.StartQuiz(dataLoader, i, totalquestionsnmbr_label, questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
+                        NextButton.Enabled = true;
+                        i++;
+                    }
+                }
             }
         }
 

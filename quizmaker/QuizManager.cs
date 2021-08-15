@@ -10,16 +10,20 @@ namespace quizmaker
     class QuizManager
     {
         string[] answers = {"", "", "", ""};
+
         List<int> indexes = new List<int>();
 
         Random rnd = new Random();
 
-        int correct_answers = 0, wrong_answers = 0; 
+       public int correct_answers = 0, wrong_answers = 0; 
         public List<Question> wrongAnsweredQuestions = new List<Question>();
         string answer;
 
         public void StartQuiz(DataLoader dataLoader, int i, Label totalquestionsnmbr_label, Label labelnmbr, Label questiontxt, RadioButton answera, RadioButton answerb, RadioButton answerc, RadioButton answerd)
         {
+            correct_answers = 0;
+            wrong_answers = 0;
+            wrongAnsweredQuestions.Clear();
             RefreshLabels(dataLoader, i, labelnmbr, questiontxt, answera, answerb, answerc, answerd);
             totalquestionsnmbr_label.Text = (dataLoader.questions.Count).ToString();
         }
