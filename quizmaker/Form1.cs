@@ -40,7 +40,7 @@ namespace quizmaker
 
         private void StartButton_Click(object sender, EventArgs e)
         {
-            // TODO: dasda
+            i = 0;
             dataLoader.LoadData(richTextBox2);
             quizManager.StartQuiz(dataLoader, i, totalquestionsnmbr_label, questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
             NextButton.Enabled = true;
@@ -69,6 +69,7 @@ namespace quizmaker
             }
             else
             {
+                quizManager.CheckAnswer(dataLoader, i, questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
                 Console.WriteLine("Koniec pytań.");
             }
         }

@@ -1,34 +1,27 @@
-1. KIM BYL JAN PAWEL 2
-LISTONOSZEM
-PAPIEZEM
-KURIEREM
-SPAWACZEM
+1. Znak komentarza w C#
+#
+//
+<
+!--
 B
 
-2. KTO TO STONOGA
-POLITYK
-NIE WIEM
-CO MNIE TO
-NARA
+2. Main rola Ohaya
+mid
+support
+adc
+top
+A
+
+3. Main role Lighta
+top/support
+support/adc
+jungle/top
+top/adc
+A
+
+4. Złamanie linii w HTML
+<hr/>
+<break/>
+<br/>
+<rathernottoanswer>
 C
-
-3.
-A 1
-B 2
-C 3
-D 4
-A
-
-4.
-A 1
-B 2
-C 3
-D 4
-A
-
-5.
-A 1
-B 2
-C 3
-D 4
-A
