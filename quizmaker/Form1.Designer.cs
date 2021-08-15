@@ -40,8 +40,8 @@ namespace quizmaker
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.NextButton = new System.Windows.Forms.Button();
+            this.StartButton = new System.Windows.Forms.Button();
             this.questiontxt_label = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.totalquestionsnmbr_label = new System.Windows.Forms.Label();
@@ -151,26 +151,26 @@ namespace quizmaker
             this.label6.TabIndex = 20;
             this.label6.Text = "C";
             // 
-            // button1
+            // NextButton
             // 
-            this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(81, 163);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 48);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Dalej";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.NextButton.Enabled = false;
+            this.NextButton.Location = new System.Drawing.Point(81, 163);
+            this.NextButton.Name = "NextButton";
+            this.NextButton.Size = new System.Drawing.Size(113, 48);
+            this.NextButton.TabIndex = 22;
+            this.NextButton.Text = "Dalej";
+            this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
-            // button4
+            // StartButton
             // 
-            this.button4.Location = new System.Drawing.Point(256, 82);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(124, 75);
-            this.button4.TabIndex = 23;
-            this.button4.Text = "Start";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.StartButton.Location = new System.Drawing.Point(256, 82);
+            this.StartButton.Name = "StartButton";
+            this.StartButton.Size = new System.Drawing.Size(124, 75);
+            this.StartButton.TabIndex = 23;
+            this.StartButton.Text = "Start";
+            this.StartButton.UseVisualStyleBackColor = true;
+            this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
             // 
             // questiontxt_label
             // 
@@ -216,8 +216,8 @@ namespace quizmaker
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.questiontxt_label);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.StartButton);
+            this.Controls.Add(this.NextButton);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
@@ -250,8 +250,8 @@ namespace quizmaker
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button NextButton;
+        private System.Windows.Forms.Button StartButton;
         private System.Windows.Forms.Label questiontxt_label;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label totalquestionsnmbr_label;
