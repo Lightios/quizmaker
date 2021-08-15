@@ -46,11 +46,13 @@ namespace quizmaker
             this.label1 = new System.Windows.Forms.Label();
             this.totalquestionsnmbr_label = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // richTextBox2
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(495, 31);
+            this.richTextBox2.Location = new System.Drawing.Point(511, 330);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(227, 144);
             this.richTextBox2.TabIndex = 5;
@@ -60,25 +62,28 @@ namespace quizmaker
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 9);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(191, 15);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 13);
+            this.label2.Size = new System.Drawing.Size(133, 25);
             this.label2.TabIndex = 8;
             this.label2.Text = "Pytanie nr. ";
             // 
             // questionnmbr_label
             // 
             this.questionnmbr_label.AutoSize = true;
-            this.questionnmbr_label.Location = new System.Drawing.Point(78, 9);
+            this.questionnmbr_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.questionnmbr_label.Location = new System.Drawing.Point(305, 15);
             this.questionnmbr_label.Name = "questionnmbr_label";
-            this.questionnmbr_label.Size = new System.Drawing.Size(12, 13);
+            this.questionnmbr_label.Size = new System.Drawing.Size(24, 25);
             this.questionnmbr_label.TabIndex = 9;
             this.questionnmbr_label.Text = "x";
             // 
             // answera_radiobtn
             // 
             this.answera_radiobtn.AutoSize = true;
-            this.answera_radiobtn.Location = new System.Drawing.Point(35, 59);
+            this.answera_radiobtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.answera_radiobtn.Location = new System.Drawing.Point(389, 125);
             this.answera_radiobtn.Name = "answera_radiobtn";
             this.answera_radiobtn.Size = new System.Drawing.Size(14, 13);
             this.answera_radiobtn.TabIndex = 14;
@@ -88,7 +93,8 @@ namespace quizmaker
             // answerb_radiobtn
             // 
             this.answerb_radiobtn.AutoSize = true;
-            this.answerb_radiobtn.Location = new System.Drawing.Point(35, 82);
+            this.answerb_radiobtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.answerb_radiobtn.Location = new System.Drawing.Point(389, 164);
             this.answerb_radiobtn.Name = "answerb_radiobtn";
             this.answerb_radiobtn.Size = new System.Drawing.Size(14, 13);
             this.answerb_radiobtn.TabIndex = 15;
@@ -98,7 +104,8 @@ namespace quizmaker
             // answerc_radiobtn
             // 
             this.answerc_radiobtn.AutoSize = true;
-            this.answerc_radiobtn.Location = new System.Drawing.Point(35, 103);
+            this.answerc_radiobtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.answerc_radiobtn.Location = new System.Drawing.Point(389, 238);
             this.answerc_radiobtn.Name = "answerc_radiobtn";
             this.answerc_radiobtn.Size = new System.Drawing.Size(14, 13);
             this.answerc_radiobtn.TabIndex = 17;
@@ -108,7 +115,8 @@ namespace quizmaker
             // answerd_radiobtn
             // 
             this.answerd_radiobtn.AutoSize = true;
-            this.answerd_radiobtn.Location = new System.Drawing.Point(35, 126);
+            this.answerd_radiobtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.answerd_radiobtn.Location = new System.Drawing.Point(389, 203);
             this.answerd_radiobtn.Name = "answerd_radiobtn";
             this.answerd_radiobtn.Size = new System.Drawing.Size(14, 13);
             this.answerd_radiobtn.TabIndex = 16;
@@ -118,45 +126,50 @@ namespace quizmaker
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(14, 59);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Location = new System.Drawing.Point(360, 125);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(14, 13);
+            this.label3.Size = new System.Drawing.Size(23, 24);
             this.label3.TabIndex = 18;
             this.label3.Text = "A";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(14, 82);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.Location = new System.Drawing.Point(360, 167);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(14, 13);
+            this.label4.Size = new System.Drawing.Size(22, 24);
             this.label4.TabIndex = 19;
             this.label4.Text = "B";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(14, 126);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label5.Location = new System.Drawing.Point(360, 203);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(15, 13);
+            this.label5.Size = new System.Drawing.Size(23, 24);
             this.label5.TabIndex = 21;
             this.label5.Text = "D";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(14, 103);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label6.Location = new System.Drawing.Point(360, 241);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(14, 13);
+            this.label6.Size = new System.Drawing.Size(23, 24);
             this.label6.TabIndex = 20;
             this.label6.Text = "C";
             // 
             // NextButton
             // 
             this.NextButton.Enabled = false;
-            this.NextButton.Location = new System.Drawing.Point(81, 163);
+            this.NextButton.Location = new System.Drawing.Point(260, 291);
             this.NextButton.Name = "NextButton";
-            this.NextButton.Size = new System.Drawing.Size(113, 48);
+            this.NextButton.Size = new System.Drawing.Size(173, 59);
             this.NextButton.TabIndex = 22;
             this.NextButton.Text = "Dalej";
             this.NextButton.UseVisualStyleBackColor = true;
@@ -164,9 +177,13 @@ namespace quizmaker
             // 
             // StartButton
             // 
-            this.StartButton.Location = new System.Drawing.Point(256, 82);
+            this.StartButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.StartButton.FlatAppearance.BorderSize = 0;
+            this.StartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StartButton.ForeColor = System.Drawing.Color.Gainsboro;
+            this.StartButton.Location = new System.Drawing.Point(0, 0);
             this.StartButton.Name = "StartButton";
-            this.StartButton.Size = new System.Drawing.Size(124, 75);
+            this.StartButton.Size = new System.Drawing.Size(170, 75);
             this.StartButton.TabIndex = 23;
             this.StartButton.Text = "Start";
             this.StartButton.UseVisualStyleBackColor = true;
@@ -175,17 +192,19 @@ namespace quizmaker
             // questiontxt_label
             // 
             this.questiontxt_label.AutoSize = true;
-            this.questiontxt_label.Location = new System.Drawing.Point(23, 31);
+            this.questiontxt_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.questiontxt_label.Location = new System.Drawing.Point(333, 90);
             this.questiontxt_label.Name = "questiontxt_label";
-            this.questiontxt_label.Size = new System.Drawing.Size(0, 13);
+            this.questiontxt_label.Size = new System.Drawing.Size(0, 25);
             this.questiontxt_label.TabIndex = 24;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(90, 10);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(334, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(12, 13);
+            this.label1.Size = new System.Drawing.Size(19, 25);
             this.label1.TabIndex = 25;
             this.label1.Text = "/";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -193,30 +212,42 @@ namespace quizmaker
             // totalquestionsnmbr_label
             // 
             this.totalquestionsnmbr_label.AutoSize = true;
-            this.totalquestionsnmbr_label.Location = new System.Drawing.Point(102, 9);
+            this.totalquestionsnmbr_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.totalquestionsnmbr_label.Location = new System.Drawing.Point(359, 15);
             this.totalquestionsnmbr_label.Name = "totalquestionsnmbr_label";
-            this.totalquestionsnmbr_label.Size = new System.Drawing.Size(12, 13);
+            this.totalquestionsnmbr_label.Size = new System.Drawing.Size(24, 25);
             this.totalquestionsnmbr_label.TabIndex = 9;
             this.totalquestionsnmbr_label.Text = "x";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(591, 15);
+            this.label7.Location = new System.Drawing.Point(600, 314);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(42, 13);
             this.label7.TabIndex = 26;
             this.label7.Text = "Pytania";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.panel1.Controls.Add(this.StartButton);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(170, 486);
+            this.panel1.TabIndex = 27;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(750, 266);
+            this.ClientSize = new System.Drawing.Size(750, 486);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.questiontxt_label);
-            this.Controls.Add(this.StartButton);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
@@ -229,10 +260,10 @@ namespace quizmaker
             this.Controls.Add(this.totalquestionsnmbr_label);
             this.Controls.Add(this.questionnmbr_label);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.richTextBox2);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "QuizManager";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,6 +287,7 @@ namespace quizmaker
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label totalquestionsnmbr_label;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
