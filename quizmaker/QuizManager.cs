@@ -10,10 +10,11 @@ namespace quizmaker
     class QuizManager
     {
         int correct_answers = 0, wrong_answers = 0;
+        public List<Question> wrongAnsweredQuestions = new List<Question>();
+
         public void StartQuiz(DataLoader dataLoader, int i, Label totalquestionsnmbr_label, Label labelnmbr, Label questiontxt, RadioButton answera, RadioButton answerb, RadioButton answerc, RadioButton answerd)
         {
             totalquestionsnmbr_label.Text = (dataLoader.questions.Count).ToString();
-           
 
             if (i >= 1) {
                
@@ -28,8 +29,7 @@ namespace quizmaker
                 Console.WriteLine("Poprawne odpowiedzi: " + correct_answers.ToString());
                 Console.WriteLine("Złe odpowiedzi: " + wrong_answers.ToString());
             }
-            
-            
+
             labelnmbr.Text = (i + 1).ToString();
             questiontxt.Text = dataLoader.questions[i].content;
             answera.Text = dataLoader.questions[i].answerA;
@@ -40,13 +40,6 @@ namespace quizmaker
             answerb.Checked = false;
             answerc.Checked = false;
             answerd.Checked = false;
-            
-           
-            
-            
-
-
-
         }
     }
 }
