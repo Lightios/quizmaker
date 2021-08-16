@@ -22,6 +22,7 @@ namespace quizmaker
         public Form1()
         {
             InitializeComponent();
+            tableLayoutPanel1.BringToFront();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -41,11 +42,13 @@ namespace quizmaker
 
         private void StartButton_Click(object sender, EventArgs e)
         {
+            tableLayoutPanel1.Visible = false;
             i = 0;
             dataLoader.LoadData(richTextBox2);
             quizManager.StartQuiz(dataLoader, i, totalquestionsnmbr_label, questionnmbr_label, questiontxt_label, answera_radiobtn, answerb_radiobtn, answerc_radiobtn, answerd_radiobtn);
             NextButton.Enabled = true;
             i++;
+            
             //if(isopen == false)
             //{
             //    QuizForm quizForm = new QuizForm();
